@@ -59,7 +59,7 @@ def runExample():
 	mySensor.filter = 1  		# 0 to 4 is valid. Filter coefficient. See 3.4.4
 	mySensor.standby_time = 0 	# 0 to 7 valid. Time between readings. See table 27.
 	
-	mySensor.over_sample = 1			# 0 to 16 are valid. 0 disables temp sensing. See table 24.
+	mySensor.tempature_oversample = 1			# 0 to 16 are valid. 0 disables temp sensing. See table 24.
 	mySensor.pressure_oversample = 1	# 0 to 16 are valid. 0 disables pressure sensing. See table 23.
 	mySensor.humidity_oversample = 1	# 0 to 16 are valid. 0 disables humidity sensing. See table 19.
 	mySensor.mode = mySensor.MODE_NORMAL # MODE_SLEEP, MODE_FORCED, MODE_NORMAL is valid. See 3.3
