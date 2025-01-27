@@ -1,8 +1,11 @@
 {
     "urls": [
-      ["qwiic_bme280.py", "github:sparkfun/Qwiic_BME280_Py/qwiic_bme280.py"]
+      ["/qwiic_bme280_examples/qwiic_bme280_ex1.py", "github:sparkfun/qwiic_bme280_py/examples/qwiic_bme280_ex1.py"],
+      ["/qwiic_bme280_examples/qwiic_bme280_ex4.py", "github:sparkfun/qwiic_bme280_py/examples/qwiic_bme280_ex4.py"], 
+      ["/qwiic_bme280_examples/qwiic_bme280_ex5.py", "github:sparkfun/qwiic_bme280_py/examples/qwiic_bme280_ex5.py"]
     ],
     "deps": [
+      ["github:sparkfun/qwiic_bme280_py", "main"]
       ["github:sparkfun/Qwiic_I2C_Py", "master"]
     ],
     "version": "0.9.1"
