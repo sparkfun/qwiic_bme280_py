@@ -65,9 +65,9 @@ You can pass any path as path/to/venv, just make sure you use the same one for a
 
 Next, install the qwiic package with:
 ```sh
-path/to/venv/bin/pip3 install sparkfun-qwiic-keypad
+path/to/venv/bin/pip3 install sparkfun-qwiic-bme280
 ```
-Now you should be able to run any example or custom python scripts that have `import qwiic_keypad` by running e.g.:
+Now you should be able to run any example or custom python scripts that have `import qwiic_bme280` by running e.g.:
 ```sh
 path/to/venv/bin/python3 example_script.py
 ```
