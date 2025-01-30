@@ -51,43 +51,25 @@ The first step to using this package is installing it on your system. The instal
 
 ### Python 
 
-The package is primarily installed using the `pip` command, downloading the package from the Python Index - "PyPi". Note - the below instructions outline installation an Linux-based (Raspberry Pi) system.
-
 #### PyPi Installation
 
-The SparkFun Qwiic BME280 Python package is part of the overall SparkFun Qwiic Python package which is hosted on PyPi. On systems that support PyPi installation via pip, this library is installed using the following commands
+The package is primarily installed using the `pip3` command, downloading the package from the Python Index - "PyPi". 
 
-For all users (note: the user must have sudo privileges):
+Note - the below instructions outline installation on a Linux-based (Raspberry Pi) system.
+
+First, setup a virtual environment from a specific directory using venv:
 ```sh
-sudo pip install sparkfun-qwiic
+python3 -m venv path/to/venv
 ```
-For the current user:
+You can pass any path as path/to/venv, just make sure you use the same one for all future steps. For more information on venv [click here](https://docs.python.org/3/library/venv.html).
 
+Next, install the qwiic package with:
 ```sh
-pip install sparkfun-qwiic
+path/to/venv/bin/pip3 install sparkfun-qwiic-keypad
 ```
----
----
-> [!CAUTION]
-> **TODO** Put together how this works with the new virtual environments used with the latest Python install
----
----
-#### Local Installation
-To install, make sure the setuptools package is installed on the system.
-
-Direct installation at the command line:
+Now you should be able to run any example or custom python scripts that have `import qwiic_keypad` by running e.g.:
 ```sh
-python setup.py install
-```
-
-To build a package for use with pip:
-```sh
-python setup.py sdist
- ```
-A package file is built and placed in a subdirectory called dist. This package file can be installed using pip.
-```sh
-cd dist
-pip install sparkfun_qwiic_bme280-<version>.tar.gz
+path/to/venv/bin/python3 example_script.py
 ```
 
 ### MicroPython Installation
@@ -96,6 +78,11 @@ If not already installed, follow the [instructions here](https://docs.micropytho
 Connect a device with MicroPython installed to your computer and then install the package directly to your device with mpremote mip.
 ```sh
 mpremote mip install github:sparkfun/qwiic_bme280_py
+```
+
+If you would also like to install the examples for this repository, issue the following mip command as well:
+```sh
+mprmeote mip install github:sparkfun/qwiic_bme280_py@examples
 ```
 
 ### CircuitPython Installation
@@ -109,6 +96,14 @@ circup bundle-add sparkfun/Qwiic_Py
 Finally, connect a device with CircuitPython installed to your computer and then install the package directly to your device with circup.
 ```sh
 circup install --py qwiic_bme280
+```
+
+If you would like to install any of the examples from this repository, issue the corresponding circup command from below. (NOTE: The below syntax assumes you are using CircUp on Windows. Linux and Mac will have different path seperators (i.e. "/" vs. "\"). See the [CircUp "example" command documentation](https://learn.adafruit.com/keep-your-circuitpython-libraries-on-devices-up-to-date-with-circup/example-command) for more information)
+
+```sh
+circup example qwiic_bme280\qwiic_bme280_ex1
+circup example qwiic_bme280\qwiic_bme280_ex4
+circup example qwiic_bme280\qwiic_bme280_ex5
 ```
 
 Example Use
