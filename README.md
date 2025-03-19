@@ -32,7 +32,7 @@ New to qwiic? Take a look at the entire [SparkFun qwiic ecosystem](https://www.s
 This Python package supports the following SparkFun qwiic products on Python, MicroPython and Circuit python. 
 
 * [SparkFun Atmospheric Sensor Breakout - BME280](https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html?gad_source=1)
-* [SparkFun Environmental Combo Breakout - ENS160/BME280](https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html?gad_source=1)
+* [SparkFun Environmental Combo Breakout - ENS160/BME280](https://www.sparkfun.com/sparkfun-environmental-combo-breakout-ens160-bme280-qwiic.html)
 
 ### Supported Platforms
 
